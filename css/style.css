@@ -66,8 +66,10 @@ body{
 }
 
 #notifiers_wrap{
-    left: 0;
-    z-index: 2100;
+    /* left: 0; */
+    z-index: 99999;
+    width: 500px;
+    height: 100px;
 }
 
 .notifier_baloon_wrap{
@@ -146,9 +148,10 @@ td.notifier_baloon_msg {
   text-align: left;
 }
 
-#popup{
+#notifier_body{
   padding-top: 25px;
   width: 50%;
   margin: 0 auto;
+  height: 100px;
 }
 
