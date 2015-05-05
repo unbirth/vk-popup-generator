@@ -7,6 +7,26 @@ body{
     color: #FFF;
     border-radius: 0 0 8px 8px;
     border: 1px solid #5B7FA6;
-    text-align: center;
     padding-bottom: 10px;
+}
+
+.select-image{
+    text-align: center;
+}
+
+.select-image div p{
+    heigh: 25px;
+    vertical-align: bottom;
+}
+
+.round-image{
+    background: #5B7FA6;
+    height: 200px;
+    width: 200px;
+    margin: 10px auto 20px;
+    border-radius: 50%;
+    border: 7px solid white;
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.2);
 }
