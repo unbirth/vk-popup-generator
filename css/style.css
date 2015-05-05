@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#notifiers_wrap{
+#messages_wrap{
     font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
     font-size: 11px;
     line-height: 1.182;
@@ -65,18 +65,18 @@ body{
     color: white;
 }
 
-#notifiers_wrap{
+#messages_wrap{
     /* left: 0; */
     z-index: 99999;
     width: 500px;
     height: 100px;
 }
 
-.notifier_baloon_wrap{
+.message_baloon_wrap{
     padding: 0 0 10px 10px;
 }
 
-.notifier_baloon{
+.message_baloon{
     color: #FFF;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.75);
@@ -90,28 +90,28 @@ body{
     text-shadow: 0px 1px 0px #262626;
 }
 
-.notifier_baloon_head{
+.message_baloon_head{
     padding: 10px 10px 3px;
     float: left;
     height: 35px;
 }
 
-div.notifier_baloon_title {
+div.message_baloon_title {
   font-weight: bold;
   font-size: 1.09em;
 }
 
-.notifier_baloon_body {
+.message_baloon_body {
   padding: 5px 10px 10px;
 }
 
-td.notifier_image_wrap {
+td.message_image_wrap {
   vertical-align: top;
   padding-right: 10px;
   width: 50px;
 }
 
-div.notifier_image_wrap {
+div.message_image_wrap {
   overflow: hidden;
   width: 50px;
   max-height: 50px;
@@ -124,31 +124,31 @@ div.notifier_image_wrap {
   line-height: 0;
 }
 
-#notifiers_wrap a{
+#messages_wrap a{
   color: #B1DAFF;
 }
 
-.notifier_image {
+.message_image {
   width: 50px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
-td.notifier_baloon_msg {
+td.message_baloon_msg {
   text-align: left;
   vertical-align: top;
 }
 
-#notifiers_wrap a.mem_link{
+#messages_wrap a.mem_link{
   font-weight: bold;
 }
 
-td.notifier_baloon_msg {
+td.message_baloon_msg {
   text-align: left;
 }
 
-#notifier_body{
+#message_body{
   padding-top: 25px;
   width: 50%;
   margin: 0 auto;
