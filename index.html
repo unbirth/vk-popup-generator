@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/notifier.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,40 +23,101 @@
   <body>
   	<div class="container">
     	<div class="row">
-    		<div class="col-xs-12 col-sm-5 header">
-    			<p class="h1">VK Popup Generator</p>
-    			<p class="h4">Создайте всплывающее окно в стиле VK со своим текстом!</p>
+    		<div class="col-xs-12 col-sm-8 header">
+    			<h1>VK Popup Generator<br>
+    			<small>Создайте всплывающее окно в стиле VK со своим текстом!</small></h1>
     		</div>
     	</div>
+    	<div class="row main-content">
+			<div class="row select-image">
+				<p class="h2 description description-first">1. Выберите способ загрузки изображения:</p>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="round-image image-first"></div>
+	    			<p>Войти и использовать фотографию со своей страницы</p>
+	    			<button type="button" class="btn btn-default">Выбрать</button>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="round-image image-second"></div>
+	    			<p>Указать любого пользователя и использовать его фотографию</p>
+	    			<button type="button" class="btn btn-default">Выбрать</button>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="round-image image-third"></div>
+	    			<p>Загрузить своё изображение и использовать его</p>
+	    			<button type="button" class="btn btn-default">Выбрать</button>
+	    		</div>
+			</div>
+  			
+    	</div>
+
     	<div class="row">
     		<div class="col-xs-12">
-    			<p class="h2 description description-first">1. Выберите способ загрузки изображения:</p>
-    			<div class="row select-image">
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-first">
-		    				
-		    			</div>
-		    			<p>Войти и использовать фотографию со своей страницы</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
-		    		</div>
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-second">
-		    				
-		    			</div>
-		    			<p>Указать любого пользователя и использовать его фотографию</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
-		    		</div>
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-third">
-		    				
-		    			</div>
-		    			<p>Загрузить своё изображение и использовать его</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
-		    		</div>
-				</div>
-    		</div>
+    			<p class="h2 description description-second">2. Создайте своё всплывающее окошко:</p>
+    			<div class="row create-popup">
+		    		<div class="col-xs-12 col-sm-6">
 
-    	</div>
+		    			<div class="input-group top-text">
+						  <span class="input-group-addon">Заголовок:</span>
+						  <input type="text" class="form-control" aria-label="Введите заголовок для всплывающего окошка">
+						</div>
+
+						<div class="input-group sender-name">
+						  <span class="input-group-addon">Имя отправителя:</span>
+						  <input type="text" class="form-control" aria-label="Введите имя отправителя">
+						</div>
+
+						<div class="input-group main-text">
+						  <span class="input-group-addon">Основной текст:</span>
+						  <input type="text" class="form-control" aria-label="Введите основной текст всплывающего окошка">
+						</div>
+
+		    		</div>
+		    		<div class="col-xs-12 col-sm-offset-1 col-sm-3">
+		    			<div id="popup">
+			    				<div id="notifiers_wrap" class="fixed" style="bottom: 0px;">
+			    					<div class="notifier_baloon_wrap" style="visibility: visible;">
+			    						<div class="notifier_baloon clear_fix" style="opacity: 1;">
+			    							<div class="notifier_baloon_head clear_fix">
+			    								<div class="notifier_baloon_title fl_l">Ваша запись понравилась</div>
+			    								<div class="notifier_close_wrap fl_r">
+			    									<a class="notifier_close" title="Закрыть" href=""></a>
+			    								</div>
+			    							</div>
+			    							<div class="notifier_baloon_body">
+			    								<table cellpadding="0" cellspacing="0" width="100%">
+			    									<tbody>
+			    										<tr>
+			    											<td class="notifier_image_wrap">
+			    												<div class="notifier_image_wrap">
+			    													<a>
+			    														<img src="http://cs7003.userapi.com/v7003685/1ddd/jZ8LZcwYN20.jpg" class="notifier_image" id="sender_image">
+			    													</a>
+			    												</div>
+			    											</td>
+			    											<td class="notifier_baloon_msg">
+			    												<div class="notifier_baloon_msg wrapped" style="width: 180px;">
+			    													<a class="mem_link" id="sender_name">Марго Фроловой</a> <span id="main_text">понравилась Ваша запись «roll».</span>
+			    												</div>
+			    											</td>
+			    											<td class="notifier_add_image_wrap">
+			    												<div class="notifier_image_wrap">
+			    													<img src="http://cs7003.userapi.com/v7003685/1ddd/jZ8LZcwYN20.jpg" class="notifier_image">
+			    												</div>
+			    											</td>
+			    										</tr>
+		    										</tbody>
+	    										</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+		    			</div>
+		    		</div>
+		    	</div>
+			</div>
+		</div>
+
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->

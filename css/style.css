@@ -2,21 +2,26 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+#notifiers_wrap{
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    line-height: 1.182;
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
 .header{
-    background: #5B7FA6;
-    color: #FFF;
-    border-radius: 0 0 8px 8px;
-    border: 1px solid #5B7FA6;
-    padding-bottom: 10px;
+    border-bottom: 3px solid #5B7FA6;
+    border-left: 3px solid #5B7FA6;
+    border-radius: 0 0 0 10px;
+    padding-bottom: 20
+    -webkit-box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
+    box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
 }
 
 .select-image{
     text-align: center;
-}
-
-.select-image div p{
-    heigh: 25px;
-    vertical-align: bottom;
 }
 
 .round-image{
@@ -27,9 +32,9 @@ body{
     margin: 10px auto 20px;
     border-radius: 50%;
     border: 7px solid white;
-    -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
+    box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
 }
 
 .round-image.image-first{
@@ -42,4 +47,20 @@ body{
 
 .round-image.image-third{
         background-image: url(images/upload.png);
+}
+
+.input-group{
+    margin: 10px 0;
+}
+
+.input-group-addon{
+    background: #5B7FA6;
+    color: white;
+    border-color: #5B7FA6;
+}
+
+.btn-default:hover{
+    background: #5B7FA6;
+    border-color: #5B7FA6;
+    color: white;
 }
