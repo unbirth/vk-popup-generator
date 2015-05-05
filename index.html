@@ -22,40 +22,63 @@
   <body>
   	<div class="container">
     	<div class="row">
-    		<div class="col-xs-12 col-sm-5 header">
-    			<p class="h1">VK Popup Generator</p>
-    			<p class="h4">Создайте всплывающее окно в стиле VK со своим текстом!</p>
+    		<div class="col-xs-12 col-sm-8 header">
+    			<h1>VK Popup Generator<br>
+    			<small>Создайте всплывающее окно в стиле VK со своим текстом!</small></h1>
     		</div>
     	</div>
+    	<div class="row main-content">
+			<div class="row select-image">
+				<p class="h2 description description-first">1. Выберите способ загрузки изображения:</p>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="round-image image-first"></div>
+	    			<p>Войти и использовать фотографию со своей страницы</p>
+	    			<button type="button" class="btn btn-default">Выбрать</button>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="round-image image-second"></div>
+	    			<p>Указать любого пользователя и использовать его фотографию</p>
+	    			<button type="button" class="btn btn-default">Выбрать</button>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="round-image image-third"></div>
+	    			<p>Загрузить своё изображение и использовать его</p>
+	    			<button type="button" class="btn btn-default">Выбрать</button>
+	    		</div>
+			</div>
+  			
+    	</div>
+
     	<div class="row">
     		<div class="col-xs-12">
-    			<p class="h2 description description-first">1. Выберите способ загрузки изображения:</p>
-    			<div class="row select-image">
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-first">
-		    				
-		    			</div>
-		    			<p>Войти и использовать фотографию со своей страницы</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
-		    		</div>
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-second">
-		    				
-		    			</div>
-		    			<p>Указать любого пользователя и использовать его фотографию</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
-		    		</div>
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-third">
-		    				
-		    			</div>
-		    			<p>Загрузить своё изображение и использовать его</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
-		    		</div>
-				</div>
-    		</div>
+    			<p class="h2 description description-second">2. Создайте своё всплывающее окошко:</p>
+    			<div class="row create-popup">
+		    		<div class="col-xs-12 col-sm-6">
 
-    	</div>
+		    			<div class="input-group top-text">
+						  <span class="input-group-addon">Заголовок:</span>
+						  <input type="text" class="form-control" aria-label="Введите заголовок для всплывающего окошка">
+						</div>
+
+						<div class="input-group sender-name">
+						  <span class="input-group-addon">Имя отправителя:</span>
+						  <input type="text" class="form-control" aria-label="Введите имя отправителя">
+						</div>
+
+						<div class="input-group main-text">
+						  <span class="input-group-addon">Основной текст:</span>
+						  <input type="text" class="form-control" aria-label="Введите основной текст всплывающего окошка">
+						</div>
+
+		    		</div>
+		    		<div class="col-xs-12 col-sm-6">
+		    			<div id="popup">
+		    			</div>
+		    		</div>
+		    	</div>
+			</div>
+		</div>
+
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
