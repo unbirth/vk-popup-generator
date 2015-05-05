@@ -1,0 +1,12 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header{
+    background: #5B7FA6;
+    color: #FFF;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #5B7FA6;
+    text-align: center;
+    padding-bottom: 10px;
+}
