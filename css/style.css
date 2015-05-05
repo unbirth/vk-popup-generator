@@ -21,6 +21,7 @@ body{
 
 .round-image{
     background: #5B7FA6;
+    background-size: cover;
     height: 200px;
     width: 200px;
     margin: 10px auto 20px;
@@ -29,4 +30,16 @@ body{
     -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
     box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.2);
+}
+
+.round-image.image-first{
+        background-image: url(images/door.png);
+}
+
+.round-image.image-second{
+        background-image: url(images/finger.png);
+}
+
+.round-image.image-third{
+        background-image: url(images/upload.png);
 }
