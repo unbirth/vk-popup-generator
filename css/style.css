@@ -68,7 +68,7 @@ body{
 #messages_wrap{
     /* left: 0; */
     z-index: 99999;
-    width: 500px;
+    /* width: 500px; */
     height: 100px;
 }
 
@@ -78,6 +78,7 @@ body{
 
 .message_baloon{
     color: #FFF;
+    margin: auto;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.75);
     -moz-border-radius: 5px;
@@ -150,8 +151,6 @@ td.message_baloon_msg {
 
 #message_body{
   padding-top: 25px;
-  width: 50%;
   margin: 0 auto;
-  height: 100px;
 }
 
