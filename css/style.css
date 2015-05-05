@@ -145,3 +145,10 @@ td.notifier_baloon_msg {
 td.notifier_baloon_msg {
   text-align: left;
 }
+
+#popup{
+  padding-top: 25px;
+  width: 50%;
+  margin: 0 auto;
+}
+
