@@ -2,6 +2,10 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.description{
+  text-align: left;
+}
+
 #messages_wrap{
     font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
     font-size: 11px;
