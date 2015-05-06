@@ -24,8 +24,22 @@ body{
     box-shadow: -2px 3px 1px -1px rgba(0,0,0,0.2);
 }
 
-.select-image{
+@media only screen and (min-width : 768px) {
+  .select-image{
     text-align: center;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .select-image{
+    text-align: justify;
+  }
+  .select-image .option{
+    margin: 10px 0;
+  }
+  .right{
+  text-align: right;
+  }
 }
 
 .round-image{
@@ -170,25 +184,43 @@ td.message_baloon_msg {
   box-shadow: inset -2px 3px 1px -1px rgba(0,0,0,0.2);
 }
 
-.qr_code{ 
-  border-radius: 10px;
-  border: 3px solid #5B7FA6;
-  padding: 15px;
+.footer .h1{
+  text-align: justify;
+}
 
-  -webkit-box-shadow: 2px -3px 1px -1px rgba(0,0,0,0.2);
-  -moz-box-shadow: 2px -3px 1px -1px rgba(0,0,0,0.2);
-  box-shadow: 2px -3px 1px -1px rgba(0,0,0,0.2);
+.qr_code{
+  padding: 20px 15px 15px 15px;
+  border-left: 3px solid #5B7FA6;
+  -webkit-box-shadow: -2px 0px 1px -1px rgba(0,0,0,0.2);
+  -moz-box-shadow: -2px 0px 1px -1px rgba(0,0,0,0.2);
+  box-shadow:  -2px 0px 1px -1px rgba(0,0,0,0.2);
 }
 
 .qr_code .qr_img{
   background:url(images/qr.png) no-repeat center center;
-  width: 210px;
-  height: 210px;
-  margin: auto;
+  background-size: initial;
+  width: 170px;
+  height: 170px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .qr_code p{
   text-align: justify;
-  margin: 0 auto;
-  padding: 10px 16px;
+  padding: 5px;
+  font-style: italic;
+  font-size: 10pt;
+  vertical-align: middle;
+}
+
+.deleted{
+  text-decoration: line-through;
+}
+
+.footer-mobile{
+  border-top: 3px solid #5B7FA6;
+  -webkit-box-shadow: inset -2px 3px 1px -1px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset -2px 3px 1px -1px rgba(0,0,0,0.2);
+  box-shadow:  inset -2px 3px 1px -1px rgba(0,0,0,0.2);
+  padding: 10px 0;
 }
