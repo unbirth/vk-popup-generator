@@ -33,20 +33,48 @@
 			<div class="col-xs-12">
 				<p class="h2 description description-first">1. Выберите способ загрузки изображения:</p>
 				<div class="row">
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-first"></div>
-		    			<p>Войти и использовать фотографию со своей страницы</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
+		    		<div class="col-xs-12 col-md-4 option">
+						<div class="row">
+							<div class="col-md-12">
+			    				<div class="round-image image-first hidden-xs"></div>
+			    			</div>
+			    			<div class="col-xs-8 col-md-12">
+			    				<p>Войти и использовать фотографию со своей страницы</p>
+		    				</div>
+		    				<div class="col-xs-4 col-md-12 right">
+			    				<button type="button" class="btn btn-default">Выбрать</button>
+			    			</div>
+						</div>
 		    		</div>
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-second"></div>
-		    			<p>Указать любого пользователя и использовать его фотографию</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
+		    		<div class="col-xs-12 col-md-4 option">
+						<div class="row">
+
+							<div class="col-md-12">
+			    				<div class="round-image image-second hidden-xs"></div>
+			    			</div>
+			    			<div class="col-xs-8 col-md-12">
+			    				<p>Указать любого пользователя и использовать его фотографию</p>
+		    				</div>
+		    				<div class="col-xs-4 col-md-12 right">
+			    				<button type="button" class="btn btn-default">Выбрать</button>
+			    			</div>
+
+						</div>
 		    		</div>
-		    		<div class="col-xs-12 col-sm-4">
-		    			<div class="round-image image-third"></div>
-		    			<p>Загрузить своё изображение и использовать его</p>
-		    			<button type="button" class="btn btn-default">Выбрать</button>
+		    		<div class="col-xs-12 col-md-4 option">
+						<div class="row">
+
+			    			<div class="col-md-12">
+			    				<div class="round-image image-third hidden-xs"></div>
+			    			</div>
+			    			<div class="col-xs-8 col-md-12">
+			    				<p>Загрузить своё изображение и использовать его</p>
+		    				</div>
+		    				<div class="col-xs-4 col-md-12 right">
+			    				<button type="button" class="btn btn-default">Выбрать</button>
+			    			</div>
+
+						</div>
 		    		</div>
 	    		</div>
     		</div>
@@ -61,27 +89,27 @@
 
 		    			<div class="input-group top-text">
 						  <span class="input-group-addon">Заголовок:</span>
-						  <input type="text" class="form-control" aria-label="Введите заголовок для всплывающего окошка">
+						  <input type="text" id="message_header_input" class="form-control" aria-label="Введите заголовок для всплывающего окошка">
 						</div>
 
 						<div class="input-group sender-name">
 						  <span class="input-group-addon">Имя отправителя:</span>
-						  <input type="text" class="form-control" aria-label="Введите имя отправителя">
+						  <input type="text" id="message_sender_input" class="form-control" aria-label="Введите имя отправителя">
 						</div>
 
 						<div class="input-group main-text">
 						  <span class="input-group-addon">Основной текст:</span>
-						  <input type="text" class="form-control" aria-label="Введите основной текст всплывающего окошка">
+						  <input type="text" id="message_text_input"class="form-control" aria-label="Введите основной текст всплывающего окошка">
 						</div>
 
 		    		</div>
 		    		<div class="col-xs-12 col-sm-6	">
 		    			<div id="message_body">
-			    				<div id="messages_wrap" class="fixed" style="bottom: 0px;">
+		    					<div id="messages_wrap" class="fixed" style="bottom: 0px;">
 			    					<div class="message_baloon_wrap" style="visibility: visible;">
 			    						<div class="message_baloon clear_fix" style="opacity: 1;">
 			    							<div class="message_baloon_head clear_fix">
-			    								<div class="message_baloon_title fl_l">Ваша запись понравилась</div>
+			    								<div class="message_baloon_title fl_l" id="message_header">Ваша запись понравилась</div>
 			    								<div class="message_close_wrap fl_r">
 			    									<a class="message_close" title="Закрыть" href=""></a>
 			    								</div>
@@ -99,7 +127,7 @@
 			    											</td>
 			    											<td class="message_baloon_msg">
 			    												<div class="message_baloon_msg wrapped" style="width: 180px;">
-			    													<a class="mem_link" id="sender_name">Павлу Дурову</a> <span id="main_text">понравилась Ваша запись.</span>
+			    													<a class="mem_link" id="message_sender">Павлу Дурову</a> <span id="message_text">понравилась Ваша запись.</span>
 			    												</div>
 			    											</td>
 			    										</tr>
@@ -109,17 +137,30 @@
 										</div>
 									</div>
 								</div>
-
 		    			</div>
 		    		</div>
 		    	</div>
 			</div>
 		</div>
 
-		<div class="row footer">
-			<div class="col-xs-12 col-md-offset-9 col-md-3 qr_code">
-				<div class="qr_img"></div>
-				<p >Вы можете быстро перейти на этот сайт с мобильного устройства (я не знаю, зачем это нужно, но так, вроде как, модно).</p>
+		<div class="row footer hidden-xs sm-visible">
+			<div class="col-xs-12 col-sm-8 footer_text">
+				<p class="h1">Автор: <a href="https://vk.com/id108680934">вот этот чувак</a>, рассказывайте друзьям, подписывайтесь, <span class="deleted">дарите ему деньги и кокаин</span> занимайтесь только безопасным сексом, любите друг друга и будьте здоровы.</p>
+			</div>		
+			<div class="col-xs-12 col-sm-4 qr_code">
+				<div class="row">
+					<div class="col-xs-12 col-lg-6">
+						<div class="qr_img"></div>
+					</div>
+					<div class="col-xs-12 col-lg-6">
+						<p class="italic" >Вы можете быстро перейти на этот сайт с мобильного устройства (я не знаю, зачем это нужно, но так, вроде как, модно).</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="row footer-mobile xs-visible hidden-sm hidden-lg hidden-md">
+			<div class="col-xs-12">
+				<p>Автор: <a href="https://vk.com/id108680934">вот этот чувак</a>, рассказывайте друзьям, подписывайтесь, <span class="deleted">дарите ему деньги и кокаин</span> занимайтесь только безопасным сексом, любите друг друга и будьте здоровы.</p>
 			</div>
 		</div>
 
@@ -127,5 +168,19 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="js/bootstrap.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    jQuery('#message_header_input').on('input propertychange paste', function() {
+			    $("#message_header").text($(this).val());
+			});
+			jQuery('#message_sender_input').on('input propertychange paste', function() {
+			    $("#message_sender").text($(this).val());
+			});
+			jQuery('#message_text_input').on('input propertychange paste', function() {
+			    $("#message_text").text($(this).val());
+			});
+		});
+		</script>
   </body>
 </html>
