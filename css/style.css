@@ -71,6 +71,10 @@ body{
     margin: 10px 0;
 }
 
+.input-group:first-child{
+  margin-top: 0;
+}
+
 .input-group-addon{
     background: #5B7FA6;
     color: white;
@@ -168,7 +172,6 @@ td.message_baloon_msg {
 }
 
 #message_body{
-  padding-top: 25px;
   margin: 0 auto;
 }
 
@@ -205,10 +208,13 @@ td.message_baloon_msg {
   margin: 0 auto;
 }
 
+.italic{
+    font-style: italic;
+}
+
 .qr_code p{
   text-align: justify;
   padding: 5px;
-  font-style: italic;
   font-size: 10pt;
   vertical-align: middle;
 }
