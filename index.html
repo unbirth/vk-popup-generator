@@ -29,8 +29,7 @@
   				background: undefined,
   				letterRendering: true,
 	  			onrendered: function(canvas) {
-	    			document.body.appendChild(canvas);
-	    			//document.getElementById("image-result").getContext("2d");
+	    			document.getElementById("image-result").appendChild(canvas);
 	  			}
 			});
     	}
@@ -67,7 +66,7 @@
 						  <input type="text" id="message_text_input"class="form-control" aria-label="Введите основной текст всплывающего окошка">
 						</div>
 
-						<button type="button" class="btn btn-default" style="float:right;" onclick="createScreenshot()">
+						<button type="button" class="btn btn-default" style="float:right;" onclick="SaveImage()">
 						  <span class="glyphicon glyphicon-download" aria-hidden="true"></span> Сохранить
 						</button>
 
@@ -113,14 +112,7 @@
 				    		</div>
 				    		<div class="col-xs-12">
 				    			<div id="image-result">
-				    				<script type="text/javascript"
-	src="//api.grabz.it/services/javascript.ashx?key=MzI4MTJkZWQxYjcyNDQ4Y2E1ZTI1YTAyYTJkOGUxODA=&url=http://popuper.ga/
-	&target=message_body&bheight=200&height=200&width=200">
-	</script>
 
-	<script type="text/javascript"
-src="//api.grabz.it/services/javascript.ashx?key=MzI4MTJkZWQxYjcyNDQ4Y2E1ZTI1YTAyYTJkOGUxODA=&url=http://www.google.com">
-</script>
 				    			</div>
 				    		</div>
 			    		</div>
@@ -160,12 +152,21 @@ src="//api.grabz.it/services/javascript.ashx?key=MzI4MTJkZWQxYjcyNDQ4Y2E1ZTI1YTA
 		$(document).ready(function(){
 		    jQuery('#message_header_input').on('input propertychange paste', function() {
 			    $("#message_header").text($(this).val());
+			    if( !$(this).val()) {
+			    	$("#message_header").text("Ваша запись понравилась");
+			    }
 			});
 			jQuery('#message_sender_input').on('input propertychange paste', function() {
 			    $("#message_sender").text($(this).val());
+			    if( !$(this).val()) {
+		    		$("#message_sender").text("Павлу Дурову");
+			    }
 			});
 			jQuery('#message_text_input').on('input propertychange paste', function() {
 			    $("#message_text").text($(this).val());
+			    if( !$(this).val()) {
+			    	$("#message_text").text("понравилась Ваша запись.");
+			    }
 			});
 		});
 		</script>
