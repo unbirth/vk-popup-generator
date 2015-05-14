@@ -224,3 +224,16 @@ td.message_baloon_msg {
   box-shadow:  inset -2px 3px 1px -1px rgba(0,0,0,0.2);
   padding: 10px 0;
 }
+
+#image-result{
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  width: 285px;
+}
+
+canvas{
+  display:inline-block;
+  position:relative;
+  margin: 0 auto;
+}
