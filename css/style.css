@@ -229,11 +229,14 @@ td.message_baloon_msg {
   margin: 0 auto;
   position: relative;
   display: inline-block;
-  width: 285px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 canvas{
-  display:inline-block;
-  position:relative;
+  display: inline;
+  position: relative;
   margin: 0 auto;
 }
