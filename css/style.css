@@ -90,7 +90,12 @@ body{
     color: white;
 }
 
-
+.dropdown-menu li a:hover,
+.dropdown-menu .active a:hover,
+.dropdown-menu .active a{
+  background: #5B7FA6;
+  color: white;
+}
 
 #messages_wrap{
     /* left: 0; */

@@ -181,6 +181,10 @@
 			    	$("#message_text").text("понравилась Ваша запись.");
 			    }
 			});
+			jQuery('.dropdown-menu li').click(function() {
+				$('.dropdown-menu li').removeClass('active');
+				$(this).addClass('active');
+			});
 		});
 		</script>
 
