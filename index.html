@@ -41,30 +41,36 @@
 
 		    			<div class="input-group top-text">
 						  <span class="input-group-addon">Заголовок:</span>
-						  <input type="text" id="message_header_input" class="form-control" aria-label="Введите заголовок для всплывающего окошка">
+						  <input type="text" id="message_header_input" class="form-control" placeholder='Ваша запись понравилась'>
 						</div>
 
 						<div class="input-group sender-name">
 						  <span class="input-group-addon">Имя отправителя:</span>
-						  <input type="text" id="message_sender_input" class="form-control" aria-label="Введите имя отправителя">
+						  <input type="text" id="message_sender_input" class="form-control" placeholder='Павлу Дурову'>
 						</div>
 
 						<div class="input-group main-text">
 						  <span class="input-group-addon">Основной текст:</span>
-						  <input type="text" id="message_text_input"class="form-control" aria-label="Введите основной текст всплывающего окошка">
+						  <input type="text" id="message_text_input"class="form-control" placeholder='понравилась ваша запись.'>
 						</div>
 
 						<div class="input-group">
-						      <div class="input-group-btn">
-						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Аватар <span class="caret"></span></button>
-						        <ul class="dropdown-menu">
-						          <li><a href="#">Со страницы отправителя</a></li>
-						          <li><a href="#">По ссылке</a></li>
-						          <li><a href="#">Загрузить изображение</a></li>
-						        </ul>
-						      </div><!-- /btn-group -->
-						      <input type="text" class="form-control" aria-label="...">
-						    </div><!-- /input-group -->
+					      <div class="input-group-btn">
+					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Аватар <span class="caret"></span></button>
+					        <ul class="dropdown-menu">
+					          <li><a href="#">Со страницы отправителя</a></li>
+					          <li><a href="#">По ссылке</a></li>
+					          <li><a href="#">Загрузить изображение</a></li>
+					        </ul>
+				      	</div><!-- /btn-group -->
+				      	<input type="text" class="form-control" placeholder="id1">
+				      	<span class="input-group-btn">
+					      	<button type="button" class="btn btn-default">
+								Загрузить <span class="glyphicon glyphicon-upload"  aria-hidden="true"></span>
+							</button>
+						</span>
+
+					    </div><!-- /input-group -->
 
 						<button type="button" class="btn btn-default" style="float:right;" onclick="SaveImage()">
 						  <span class="glyphicon glyphicon-refresh"  aria-hidden="true"></span> Сгенерировать
@@ -122,7 +128,7 @@
 
 		<div class="row footer hidden-xs sm-visible">
 			<div class="col-xs-12 col-sm-8 footer_text">
-				<p class="h1">Автор: <a href="https://vk.com/id108680934">вот этот чувак</a>, рассказывайте друзьям, подписывайтесь, <span class="deleted">дарите ему деньги и кокаин</span> занимайтесь только безопасным сексом, любите друг друга и будьте здоровы.</p>
+				<p class="h1">Автор: <a href="https://vk.com/id108680934">вот этот чувак</a>. Рассказывайте друзьям, подписывайтесь, <span class="deleted">дарите ему деньги и кокаин</span> занимайтесь только безопасным сексом, любите друг друга и будьте здоровы.</p>
 			</div>		
 			<div class="col-xs-12 col-sm-4 qr_code">
 				<div class="row">
