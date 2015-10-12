@@ -71,7 +71,14 @@ body{
     margin: 10px 0;
 }
 
-.input-group-addon{
+.input-group-addon,
+.input-group-btn button,
+.btn-default.active, 
+.btn-default.focus, 
+.btn-default:active, 
+.btn-default:focus, 
+.btn-default:hover, 
+.open>.dropdown-toggle.btn-default{
     background: #5B7FA6;
     color: white;
     border-color: #5B7FA6;
@@ -82,6 +89,8 @@ body{
     border-color: #5B7FA6;
     color: white;
 }
+
+
 
 #messages_wrap{
     /* left: 0; */
